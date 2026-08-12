@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+       <h1>Lets Go</h1>
+       <p class="desc">Play chords with your hands.<br>Left hand picks the note, right hand picks the chord type.<br>Pinch to play. Allow camera access to begin.</p>
+       <button id="btn">Start</button>
+    </div>
+
+    <div id="portrait-warning">
+        <h2>↻ Rotate your device</h2>
+         <p>soundgo works in landscape. Please turn your device sideways.</p>
+    </div>
+    
+        
+        <video id="vid"></video>
+        <canvas id="canva"></canvas>
+        
+       
+        <div id="hud"></div>
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.49/build/Tone.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
